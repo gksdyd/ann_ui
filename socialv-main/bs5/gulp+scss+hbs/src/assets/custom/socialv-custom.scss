@@ -1,0 +1,85 @@
+//fixed suggestion
+@media (min-width: 992px) {
+
+    .fixed-suggestion {
+        position: sticky;
+        top: 80px
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .fixed-md-suggestion {
+        position: sticky;
+        top: 80px
+    }
+
+}
+
+//sidebar chat
+.right-sidebar-close {
+    .content-inner {
+        margin-right: 0 !important;
+        transition: all 0.3s ease-in;
+    }
+
+}
+
+.content-inner {
+    transition: all 0.3s ease-in;
+}
+
+//add post modal
+#custom-post-modal.modal-dialog {
+    max-width: 46.875rem !important;
+}
+
+
+// right sidebar chat icon
+[dir="rtl"] .right-sidebar-toggle {
+    z-index: -1;
+}
+
+// custom-style flatpicker calendar
+[data-bs-theme="dark"] .flatpickr-calendar {
+    background-color: var(--bs-gray-900) !important;
+    color: var(--bs-heading-color) !important;
+    }
+      
+    [data-bs-theme="dark"] .flatpickr-month,
+    .flatpickr-weekday,
+    .flatpickr-day {
+    color: var(--bs-heading-color) !important;
+    }
+      
+    [data-bs-theme="dark"] .flatpickr-disabled,
+    .nextMonthDay {
+    color: #7a7a7a !important;
+    }
+      
+    .flatpickr-day.today{
+    background-color: var(--bs-primary-bg-subtle) !important;
+    border-color: var(--bs-primary-bg-subtle) !important;
+    border-radius: 4px !important;
+    }
+      
+    .flatpickr-day:hover{
+    background-color: var(--bs-primary-bg-subtle) !important;
+    border-color: var(--bs-primary-bg-subtle) !important;
+    border-radius: 4px !important;
+    }
+    .fc-button-group > .fc-button-active{
+        box-shadow: unset !important;
+        background-color: var(--bs-primary) !important;
+        color: #fff !important;
+    }
+
+
+  // product detail store
+  [dir='rtl'] .slider__flex {
+    .slider__col {
+        margin-left: 1.5rem;
+        margin-right: 0;
+    }
+ }

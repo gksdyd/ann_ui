@@ -1,0 +1,60 @@
+{{!-- layouts/base.hbs --}}
+
+<!doctype html>
+<html lang="en" class="theme-fs-md" data-bs-theme-color="default" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{{ appName }} | Responsive Bootstrap 5 Admin Dashboard Template</title>
+  {{> partials/head }}
+  {{#block "head"}}
+  {{!-- External page head section--}}
+  {{/block}}
+</head>
+
+<body class=" {{bodyClass}}">
+  <!-- loader Start -->
+  <div id="loading">
+    {{> partials/loader }}
+  </div>
+  <!-- loader END -->
+  <!-- Wrapper Start -->
+
+  {{> partials/sidebar }}
+
+  <main class="main-content">
+    <div class="position-relative">
+      {{> partials/header }}
+      <div>
+        <div class="position-relative">
+          {{#block "header"}}
+          {{/block}}
+        </div>
+        <div class="content-inner " id="page_layout">
+          {{#block "content"}}
+          {{/block}}
+        </div>
+      </div>
+      {{> partials/right_sidebar }}
+    </div>
+  </main>
+
+  {{> partials/footer }}
+
+  <!-- Wrapper End-->
+  <!-- offcanvas start -->
+
+  <!-- Live Customizer start -->
+  {{> partials/components/setting-offcanvas }}
+  <!-- Live Customizer end -->
+
+  {{> partials/components/share-modal }}
+
+  {{> partials/scripts }}
+
+  {{#block "scripts"}}
+  {{/block}}
+</body>
+
+</html>

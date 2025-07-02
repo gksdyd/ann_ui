@@ -1,0 +1,32 @@
+{{!-- layouts/layout.hbs --}}
+
+<!doctype html>
+<html lang="en" dir="ltr" class="theme-fs-md">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>{{ appName }} | Responsive Bootstrap 5 Admin Dashboard Template</title>
+      {{> partials/head }}
+      {{#block "head"}}
+        {{!-- External page head section--}}
+      {{/block}}
+  </head>
+  <body class="{{bodyClass}}">
+    <!-- loader Start -->
+    <div id="loading">
+      {{> partials/loader }}
+    </div>
+    {{> partials/chat/sidebar }}
+    <main class="main-content">
+      <div class="container-fluid content-inner p-0" id="page_layout">
+        {{#block "content"}}
+        {{/block}}
+      </div>
+    </main>
+    <!-- Wrapper End-->
+    {{> partials/scripts }}
+    {{> partials/chat/scripts }}
+    {{#block "scripts"}}
+    {{/block}}
+  </body>
+</html>

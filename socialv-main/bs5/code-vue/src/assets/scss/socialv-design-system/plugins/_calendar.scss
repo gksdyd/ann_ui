@@ -1,0 +1,60 @@
+
+// calendar button
+.fc-button-primary{
+    background: rgba(var(--bs-primary-rgb),.2) !important;
+    color: var(--bs-primary) !important;
+    border: none !important;
+    text-transform: capitalize !important;
+}
+
+// custom-style flatpicker calendar
+[data-bs-theme="dark"] .flatpickr-calendar {
+    background-color: var(--bs-gray-900) !important;
+    color: var(--bs-heading-color) !important;
+    }
+      
+    [data-bs-theme="dark"] .flatpickr-month,
+    .flatpickr-weekday,
+    .flatpickr-day {
+    color: var(--bs-heading-color) !important;
+    }
+      
+    [data-bs-theme="dark"] .flatpickr-disabled,
+    .nextMonthDay {
+    color: #7a7a7a !important;
+    }
+      
+    .flatpickr-day.today{
+    background-color: var(--bs-primary-bg-subtle) !important;
+    border-color: var(--bs-primary-bg-subtle) !important;
+    border-radius: 4px !important;
+    }
+      
+    .flatpickr-day:hover{
+    background-color: var(--bs-primary-bg-subtle) !important;
+    border-color: var(--bs-primary-bg-subtle) !important;
+    border-radius: 4px !important;
+    }
+    .fc-button-group > .fc-button-active{
+        box-shadow: unset !important;
+        background-color: var(--bs-primary) !important;
+        color: #fff !important;
+    }
+
+    .fc-list-event-title, .fc-list-event-time, .fc-list-day-text, .fc-list-day-side-text{
+        color: gray !important;
+    }
+
+    .fc-list-event {
+      border-color: var(--bs-border-color) !important;
+      background-color: white !important;
+    }
+    
+    [data-bs-theme="dark"] .fc-list-event-title, .fc-list-event-time, .fc-list-day-text, .fc-list-day-side-text{
+        color: gray !important;
+    }
+
+    [data-bs-theme="dark"] .fc-list-event {
+      border-color: var(--bs-border-color) !important;
+      background-color: black !important;
+    }

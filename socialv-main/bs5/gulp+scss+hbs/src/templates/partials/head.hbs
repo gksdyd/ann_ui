@@ -1,0 +1,36 @@
+<!-- Config Options -->
+<meta name="setting_options" content='{{ options }}'>
+<!-- End Config Options -->
+{{#compare faviconName '!==' ''}}
+<link rel="shortcut icon" href="{{ path }}assets/images/{{faviconName}}" />
+{{else}}
+<link rel="shortcut icon" href="{{ path }}assets/images/favicon.ico" />
+{{/compare}}
+<link rel="stylesheet" href="{{ path }}assets/css/libs.min.css">
+<link rel="stylesheet" href="{{ path }}assets/css/socialv.css?v={{version}}">
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+<!-- flatpickr css -->
+<link rel="stylesheet" href="{{ path }}assets/vendor/flatpickr/dist/flatpickr.min.css" />
+<!-- Sweetlaert2 css -->
+<link rel="stylesheet" href="{{ path }}assets/vendor/sweetalert2/dist/sweetalert2.min.css" />
+
+<!-- vanillajs css -->
+<link rel="stylesheet" href="{{ path }}assets/vendor/vanillajs-datepicker/dist/css/datepicker.min.css">
+
+<!-- zuck -->
+{{#compare isZuck '==' 'true'}}
+<!-- lib styles -->
+<link rel="stylesheet" href="{{ path }}assets/vendor/zuck.js-master/dist/zuck.min.css">
+<!-- lib skins -->
+<link rel="stylesheet" href="{{ path }}assets/vendor/zuck.js-master/dist/skins/snapssenger.min.css">
+<link rel="stylesheet" href="{{ path }}assets/vendor/zuck.js-master/dist/skins/facesnap.css">
+{{/compare}}
+
+<!-- Custom Css -->
+<link rel="stylesheet" href="{{ path }}assets/css/custom.css?v={{version}}" />
+
+<!-- Customizer Css -->
+<link rel="stylesheet" href="{{ path }}assets/css/customizer.css?v={{version}}" />

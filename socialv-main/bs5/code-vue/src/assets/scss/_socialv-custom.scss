@@ -1,0 +1,254 @@
+//fixed suggestion
+@media (min-width: 992px) {
+
+    .fixed-suggestion {
+        position: sticky;
+        top: 80px
+    }
+}
+
+@media (min-width: 768px) {
+
+    .fixed-md-suggestion {
+        position: sticky;
+        top: 80px
+    }
+
+}
+
+//sidebar chat
+.right-sidebar-close {
+    .content-inner {
+        margin-right: 0 !important;
+        transition: all 0.3s ease-in;
+    }
+
+}
+
+.content-inner {
+    transition: all 0.3s ease-in;
+}
+
+@media (min-width:990px) and (max-width: 1599px) {
+
+
+    .content-inner {
+      margin-right: 0 !important;
+      transition: all 0.3s ease-in;
+    }
+  
+    .right-sidebar-close {
+      .content-inner {
+        margin-right: 16.25rem !important;
+        transition: all 0.3s ease-in;
+      }
+  
+    }
+  }
+  
+  @media (min-width: 990px) and (max-width: 1550px) {
+  
+    // .content-inner {
+    //   padding-right: 0.5rem !important;
+    // }
+  
+    .right-sidebar-close {
+      .content-inner {
+        padding-right: 3rem !important;
+      }
+    }
+  }
+  
+  @media (min-width: 1551px) and (max-width: 1800px) {
+  
+    .content-inner {
+      padding-right: 3rem !important;
+    }
+  
+    .right-sidebar-close {
+      .content-inner {
+        padding-right: 0.5rem !important;
+      }
+    }
+  }
+  
+  
+  @media (min-width: 1600px) {
+  
+    //sidebar chat
+    .right-sidebar-close {
+      .content-inner {
+        margin-right: 0 !important;
+        transition: all 0.3s ease-in;
+      }
+  
+    }
+  }
+
+// right sidebar chat icon
+[dir="rtl"] .right-sidebar-toggle {
+  z-index: -1;
+}
+
+.custom-done {
+    line-height: 1;
+}
+
+// modal 
+#modal-center, #post-modal {
+    .modal-dialog {
+        max-width: 46.875rem;
+    }
+}
+
+
+.form-control:focus {
+    background-color: none !important;
+    box-shadow: none !important;
+}
+
+//dropdown  
+.dropdown-menu, #weather-chart{
+    z-index: 2;
+}
+
+// multiselect
+
+.multiselect.is-active  {
+    background-color: none !important;
+    box-shadow: none !important;
+}
+.multiselect-tags-search {
+    background-color: inherit !important;
+    color: #5897fb !important;
+}
+
+.multiselect-tag{
+    background-color: var(--bs-gray-300) !important;
+    border: 1px solid #aaa !important;
+    padding-left: 20px !important;
+    position: relative !important;
+    margin-top: 5px !important;
+    margin-left: 5px !important;
+    margin-bottom: 10px !important;
+  }
+
+.multiselect-option.is-pointed {
+    background-color: #5897fb !important;
+    color: #fff !important;
+}
+
+.multiselect-tag-wrapper{
+    cursor: default !important;
+    padding-left: 2px !important;
+    padding-right: 5px !important;
+    font-weight: 400 !important;
+    color: var(--bs-secondary) !important;
+}
+.multiselect-tag-remove{
+    background-color: rgba(0,0,0,0) !important;
+    border: none !important;
+    // border-right: 1px solid #aaa !important;
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+    color: #999 !important;
+    cursor: pointer !important;
+    font-size: 1em !important;
+    font-weight: 700 !important;
+    padding: 0 4px !important;
+    position: absolute;
+    left: 0 !important;
+}
+
+  [data-bs-theme=dark] {
+    .text-dark {
+        color: var(--bs-white) !important;
+    }
+    .bg-white {
+        background: var(--bs-body-bg) !important;
+    }
+    .section-form fieldset {
+        border: 3px solid rgba(var(--bs-white-rgb), .1);
+    }
+      .multiselect{
+        background-color: var(--bs-gray-900) !important;
+        border-color: var(--bs-border-color) !important;
+    }
+    .multiselect-options {
+        background-color: var(--bs-gray-900) !important;
+    }
+    .multiselect-search {
+        background-color: var(--bs-gray-900) !important;
+    }
+    .multiselect-tags-search{
+        background-color: var(--bs-gray-900) !important;
+    }
+
+
+}
+//apexchart tooltip
+[data-bs-theme="dark"] .apexcharts-tooltip.apexcharts-theme-light {
+  color: #fff !important;
+  background: rgba(30, 30, 30, .8) !important;
+  border: none !important;
+}
+
+[data-bs-theme="dark"] .apexcharts-tooltip-title {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-bottom: 1px solid #333 !important;
+}
+
+[data-bs-theme="dark"] .apexcharts-legend-text {
+  color: #fff !important;
+}
+
+[dir="rtl"] .apexcharts-legend-series {
+  gap: 0.25rem !important
+}
+  
+@media (max-width: 1599px) {
+
+  #weather-chart {
+    height: 333px !important ; 
+  }
+
+}
+
+[dir='rtl'] .slider__flex {
+    .slider__col {
+        margin-left: 1.5rem;
+        margin-right: 0;
+    }
+ }
+
+
+// compose mail modal
+// @media (min-width: 820px){
+
+// #compose-email-popup, #post-modal {
+//  .modal-dialog {
+//     max-width:  597px;
+//     margin-right: unset;
+//     margin-left: auto;
+// }
+// }
+// }
+ @media (max-width: 576px ) {
+  .modal-search-custom{
+    transform: translateY(95px) !important;
+
+  }
+}
+@media (min-width: 576px ) and (max-width: 768px ) {
+.modal-search-custom{
+  transform: translateY(102px) !important;
+    margin-top: 0 !important;
+}
+}
+ @media (min-width:768px) and (max-width: 990px ) {
+  .modal-search-custom{
+    transform: translateY(110px) !important;
+    margin-top: 0 !important;
+  }
+ }
