@@ -1,0 +1,1031 @@
+<!-- Sidebar Menu Start -->
+<ul class="navbar-nav iq-main-menu" id="sidebar-menu">
+    <li class="nav-item static-item">
+        <a class="nav-link static-item disabled" href="#" tabindex="-1">
+            <span class="default-icon">Main</span>
+            <span class="mini-icon" data-bs-toggle="tooltip" title="Social" data-bs-placement="right">-</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link {{#compare active '==' 'index'}}active{{/compare}}" aria-current="page"
+            href="{{path}}index.html">
+            <i class="icon material-symbols-outlined">
+                newspaper
+            </i>
+            <span class="item-name">Newsfeed</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#profile" role="button" aria-expanded="false"
+            aria-controls="profile">
+            <i class="icon material-symbols-outlined">
+                person
+            </i>
+            <span class="item-name">Profiles</span>
+            <i class="right-icon material-symbols-outlined">chevron_right</i>
+        </a>
+        <ul class="sub-nav collapse" id="profile" data-bs-parent="#sidebar-menu">
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'Profile'}}active{{/compare}}"
+                    href="{{path}}app/profile.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> P </i>
+                    <span class="item-name"> Profile </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'profile1'}}active{{/compare}}"
+                    href="{{path}}dashboard/profile1.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> P </i>
+                    <span class="item-name">Profile 1 </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'profile2'}}active{{/compare}}"
+                    href="{{path}}dashboard/profile2.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> P </i>
+                    <span class="item-name">Profile 2 </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'profile3'}}active{{/compare}}"
+                    href="{{path}}dashboard/profile3.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> P </i>
+                    <span class="item-name">Profile 3 </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'profile-images'}}active{{/compare}}"
+                    href="{{path}}app/profile-images.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> PI </i>
+                    <span class="item-name">Profile Image</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'profile-videos'}}active{{/compare}}"
+                    href="{{path}}app/profile-videos.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> PV </i>
+                    <span class="item-name">Profile Video</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'profile-event'}}active{{/compare}}"
+                    href="{{path}}app/profile-event.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> PE </i>
+                    <span class="item-name">Profile Events</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'profile-badges'}}active{{/compare}}"
+                    href="{{path}}app/profile-badges.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> PB </i>
+                    <span class="item-name">Profile Badges</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'profile-forum'}}active{{/compare}}"
+                    href="{{path}}app/profile-forum.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> PF </i>
+                    <span class="item-name">Profile Forum</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#friend-list" role="button" aria-expanded="false"
+            aria-controls="sidebar-special">
+            <i class="icon material-symbols-outlined">
+                people
+            </i>
+            <span class="item-name">Friend</span>
+            <i class="right-icon material-symbols-outlined">chevron_right</i>
+        </a>
+        <ul class="sub-nav collapse" id="friend-list" data-bs-parent="#sidebar-menu">
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'friend-list'}}active{{/compare}}"
+                    href="{{path}}dashboard/friend-list.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> FL </i>
+                    <span class="item-name"> Friend List</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'friend-profile'}}active{{/compare}}"
+                    href="{{path}}dashboard/friend-profile.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> FP </i>
+                    <span class="item-name">Friend Profile</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'friend-request'}}active{{/compare}}" aria-current="page"
+                    href="{{path}}dashboard/friend-request.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> FR </i>
+                    <span class="item-name">Friend Request</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link {{#compare active '==' 'group'}}active{{/compare}}" aria-current="page"
+            href="{{path}}app/group.html">
+            <i class="icon material-symbols-outlined">
+                groups
+            </i>
+            <span class="item-name">Group</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link {{#compare active '==' 'notification'}}active{{/compare}}" aria-current="page"
+            href="{{path}}dashboard/notification.html">
+            <i class="icon material-symbols-outlined">
+                notifications
+            </i>
+            <span class="item-name">Notification</span>
+        </a>
+    </li>
+    <li>
+        <hr class="hr-horizontal">
+    </li>
+    <li class="nav-item static-item">
+        <a class="nav-link static-item disabled" href="#" tabindex="-1">
+            <span class="default-icon">Featured</span>
+            <span class="mini-icon" data-bs-toggle="tooltip" title="Social" data-bs-placement="right">-</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link {{#compare active '==' 'file'}}active{{/compare}}" aria-current="page"
+            href="{{path}}dashboard/file.html">
+            <i class="icon material-symbols-outlined">
+                insert_drive_file
+            </i>
+            <span class="item-name">Files</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link {{#compare active '==' 'chat'}}active{{/compare}}" target="_blank" aria-current="page"
+            href="{{path}}app/chat.html">
+            <i class="icon material-symbols-outlined">
+                message
+            </i>
+            <span class="item-name">Chat</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link {{#compare active '==' 'todo'}}active{{/compare}}" aria-current="page"
+            href="{{path}}app/todo.html">
+            <i class="icon material-symbols-outlined">
+                task_alt
+            </i>
+            <span class="item-name">Todo</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link {{#compare active '==' 'calendar'}}active{{/compare}}" aria-current="page"
+            href="{{path}}dashboard/calendar.html">
+            <i class="icon material-symbols-outlined">
+                calendar_month
+            </i>
+            <span class="item-name">Calendar</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link {{#compare active '==' 'birthday'}}active{{/compare}}" aria-current="page"
+            href="{{path}}dashboard/birthday.html">
+            <i class="icon material-symbols-outlined">
+                cake
+            </i>
+            <span class="item-name">Birthday</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link {{#compare active '==' 'weather'}}active{{/compare}}" aria-current="page"
+            href="{{path}}dashboard/weather.html">
+            <i class="icon material-symbols-outlined">
+                thunderstorm
+            </i>
+            <span class="item-name">Weather</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link {{#compare active '==' 'music'}}active{{/compare}}" aria-current="page"
+            href="{{path}}dashboard/music.html">
+            <i class="icon material-symbols-outlined">
+                play_circle
+            </i>
+            <span class="item-name">Music</span>
+        </a>
+    </li>
+    <li>
+        <hr class="hr-horizontal">
+    </li>
+    <li class="nav-item static-item">
+        <a class="nav-link static-item disabled" href="#" tabindex="-1">
+            <span class="default-icon">Other Pages</span>
+            <span class="mini-icon" data-bs-toggle="tooltip" title="otherpages" data-bs-placement="right">-</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#market" role="button" aria-expanded="false"
+            aria-controls="sidebar-special">
+            <i class="icon material-symbols-outlined">
+                poll
+            </i>
+            <span class="item-name">Market Place</span>
+            <i class="right-icon material-symbols-outlined">chevron_right</i>
+        </a>
+        <ul class="sub-nav collapse" id="market" data-bs-parent="#sidebar-menu">
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'market1'}}active{{/compare}}"
+                    href="{{path}}dashboard/market1.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> M </i>
+                    <span class="item-name">Market 1</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'market2'}}active{{/compare}}"
+                    href="{{path}}dashboard/market2.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> M </i>
+                    <span class="item-name">Market 2</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#blog" role="button" aria-expanded="false"
+            aria-controls="sidebar-special">
+            <i class="icon material-symbols-outlined">
+                article
+            </i>
+            <span class="item-name">Blog</span>
+            <i class="right-icon material-symbols-outlined">chevron_right</i>
+        </a>
+        <ul class="sub-nav collapse" id="blog" data-bs-parent="#sidebar-menu">
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'blog-grid'}}active{{/compare}}"
+                    href="{{path}}dashboard/blog-grid.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> BG </i>
+                    <span class="item-name">Blog Grid</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'blog-list'}}active{{/compare}}"
+                    href="{{path}}dashboard/blog-list.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> BL </i>
+                    <span class="item-name">Blog List</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'blog-detail'}}active{{/compare}}"
+                    href="{{path}}dashboard/blog-detail.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> BD </i>
+                    <span class="item-name">Blog Detail</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#store" role="button" aria-expanded="false"
+            aria-controls="sidebar-special">
+            <i class="icon material-symbols-outlined">
+                storefront
+            </i>
+            <span class="item-name">Store</span>
+            <i class="right-icon material-symbols-outlined">chevron_right</i>
+        </a>
+        <ul class="sub-nav collapse" id="store" data-bs-parent="#sidebar-menu">
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'store-category-grid'}}active{{/compare}}"
+                    href="{{path}}dashboard/store-category-grid.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> CG </i>
+                    <span class="item-name">Category Grid</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'store-category-list'}}active{{/compare}}"
+                    href="{{path}}dashboard/store-category-list.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> CL </i>
+                    <span class="item-name">Category List</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'store-detail'}}active{{/compare}}"
+                    href="{{path}}dashboard/store-detail.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> SD </i>
+                    <span class="item-name">Store Detail</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'product-detail'}}active{{/compare}}"
+                    href="{{path}}dashboard/product-detail.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> SD </i>
+                    <span class="item-name">Product Detail</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'store-checkout'}}active{{/compare}}"
+                    href="{{path}}dashboard/store-checkout.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> C </i>
+                    <span class="item-name">Checkout</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#mail" role="button" aria-expanded="false"
+            aria-controls="sidebar-special">
+            <i class="icon material-symbols-outlined">
+                mail_outline
+            </i>
+            <span class="item-name">Mail</span>
+            <i class="right-icon material-symbols-outlined">chevron_right</i>
+        </a>
+        <ul class="sub-nav collapse" id="mail" data-bs-parent="#sidebar-menu">
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'email'}}active{{/compare}}" href="{{path}}app/email.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> I </i>
+                    <span class="item-name">Inbox</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'email-compose'}}active{{/compare}}"
+                    href="{{path}}app/email-compose.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> E </i>
+                    <span class="item-name">Email Compose</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#sidebar-special" role="button" aria-expanded="false"
+            aria-controls="sidebar-special">
+            <i class="icon material-symbols-outlined">
+                assignment
+            </i>
+            <span class="item-name">Special Pages</span>
+            <i class="right-icon material-symbols-outlined">chevron_right</i>
+        </a>
+        <ul class="sub-nav collapse" id="sidebar-special" data-bs-parent="#sidebar-menu">
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'pages-timeline'}}active{{/compare}}"
+                    href="{{path}}dashboard/pages-timeline.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> T </i>
+                    <span class="item-name">Timeline</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'pages-invoice'}}active{{/compare}}"
+                    href="{{path}}dashboard/pages-invoice.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> I </i>
+                    <span class="item-name">Invoice</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'pages-pricing'}}active{{/compare}}"
+                    href="{{path}}dashboard/pages-pricing.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> P </i>
+                    <span class="item-name">Pricing 1</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'pages-pricing-one'}}active{{/compare}}"
+                    href="{{path}}dashboard/pages-pricing-one.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> P </i>
+                    <span class="item-name">Pricing 2</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'pages-faq'}}active{{/compare}}"
+                    href="{{path}}dashboard/pages-faq.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> F </i>
+                    <span class="item-name">Faq</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#sidebar-auth" role="button" aria-expanded="false"
+            aria-controls="sidebar-auth">
+            <i class="icon material-symbols-outlined">
+                library_books
+            </i>
+            <span class="item-name">Auth</span>
+            <i class="right-icon material-symbols-outlined">chevron_right</i>
+        </a>
+        <ul class="sub-nav collapse" id="sidebar-auth" data-bs-parent="#sidebar-menu">
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'sign-in'}}active{{/compare}}"
+                    href="{{path}}dashboard/sign-in.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <span class="item-name">Login</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'sign-up'}}active{{/compare}}"
+                    href="{{path}}dashboard/sign-up.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <span class="item-name">Register</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'pages-recoverpw'}}active{{/compare}}"
+                    href="{{path}}dashboard/pages-recoverpw.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <span class="item-name">Recover Password</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'pages-confirm-mail'}}active{{/compare}}"
+                    href="{{path}}dashboard/pages-confirm-mail.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <span class="item-name">Confirm Mail</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'pages-lock-screen'}}active{{/compare}}"
+                    href="{{path}}dashboard/pages-lock-screen.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <span class="item-name">Lock Screen</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#utilities-error" role="button" aria-expanded="false"
+            aria-controls="utilities-error">
+            <i class="icon material-symbols-outlined">
+                turned_in_not
+            </i>
+            <span class="item-name">Utilities</span>
+            <i class="right-icon material-symbols-outlined">chevron_right</i>
+        </a>
+        <ul class="sub-nav collapse" id="utilities-error" data-bs-parent="#sidebar-menu">
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'sidebar-small'}}active{{/compare}}"
+                    href="{{path}}dashboard/pages-error.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <span class="item-name">Error 404</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'pages-error-500'}}active{{/compare}}"
+                    href="{{path}}dashboard/pages-error-500.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <span class="item-name">Error 500</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'pages-maintenance'}}active{{/compare}}"
+                    href="{{path}}dashboard/pages-maintenance.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <span class="item-name">Maintenance</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link {{#compare active '==' 'blank-page'}}active{{/compare}}"
+            href="{{path}}dashboard/blank-page.html">
+            <i class="icon material-symbols-outlined">
+                check_box_outline_blank
+            </i>
+            <span class="item-name">Blank Page</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link {{#compare active '==' 'admin'}}active{{/compare}}" href="{{path}}dashboard/admin.html">
+            <i class="icon material-symbols-outlined">
+                admin_panel_settings
+            </i>
+            <span class="item-name">Admin</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link {{#compare active '==' 'pages-comingsoon'}}active{{/compare}}"
+            href="{{path}}dashboard/pages-comingsoon.html">
+            <i class="icon material-symbols-outlined">
+                fiber_smart_record
+            </i>
+            <span class="item-name">Pages Coming soon</span>
+        </a>
+    </li>
+    <li>
+        <hr class="hr-horizontal">
+    </li>
+    <li class="nav-item static-item">
+        <a class="nav-link static-item disabled" href="#" tabindex="-1">
+            <span class="default-icon">Elements</span>
+            <span class="mini-icon" data-bs-toggle="tooltip" title="elements" data-bs-placement="right">-</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#ui-kit" role="button" aria-expanded="false"
+            aria-controls="ui-kit">
+            <i class="icon material-symbols-outlined">
+                adjust
+            </i>
+            <span class="item-name">UI Elements</span>
+            <i class="right-icon material-symbols-outlined">chevron_right</i>
+        </a>
+        <ul class="sub-nav collapse" id="ui-kit" data-bs-parent="#sidebar-menu">
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'ui-color'}}active{{/compare}}"
+                    href="{{path}}dashboard/ui-color.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> U </i>
+                    <span class="item-name">Ui Color</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'ui-typography'}}active{{/compare}}"
+                    href="{{path}}dashboard/ui-typography.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> T </i>
+                    <span class="item-name">Typography</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'ui-alerts'}}active{{/compare}}"
+                    href="{{path}}dashboard/ui-alerts.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> A </i>
+                    <span class="item-name">Alerts</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'ui-badges'}}active{{/compare}}"
+                    href="{{path}}dashboard/ui-badges.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> B </i>
+                    <span class="item-name">Badges</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'ui-breadcrumb'}}active{{/compare}}"
+                    href="{{path}}dashboard/ui-breadcrumb.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> B </i>
+                    <span class="item-name">Breadcrumb</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'ui-buttons'}}active{{/compare}}"
+                    href="{{path}}dashboard/ui-buttons.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> B </i>
+                    <span class="item-name">Buttons</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'ui-cards'}}active{{/compare}}"
+                    href="{{path}}dashboard/ui-cards.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> C </i>
+                    <span class="item-name">Cards</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'ui-carousel'}}active{{/compare}}"
+                    href="{{path}}dashboard/ui-carousel.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> C </i>
+                    <span class="item-name">Carousel</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'ui-embed-video'}}active{{/compare}}"
+                    href="{{path}}dashboard/ui-embed-video.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> V </i>
+                    <span class="item-name">Video</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'ui-grid'}}active{{/compare}}"
+                    href="{{path}}dashboard/ui-grid.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> G </i>
+                    <span class="item-name">Grid</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'ui-images'}}active{{/compare}}"
+                    href="{{path}}dashboard/ui-images.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> I </i>
+                    <span class="item-name">Images</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'ui-list-group'}}active{{/compare}}"
+                    href="{{path}}dashboard/ui-list-group.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> L </i>
+                    <span class="item-name">list Group</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'ui-modal'}}active{{/compare}}"
+                    href="{{path}}dashboard/ui-modal.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> M </i>
+                    <span class="item-name">Modal</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'ui-notifications'}}active{{/compare}}"
+                    href="{{path}}dashboard/ui-notifications.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> N</i>
+                    <span class="item-name">Notifications</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'ui-pagination'}}active{{/compare}}"
+                    href="{{path}}dashboard/ui-pagination.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> P</i>
+                    <span class="item-name">Pagination</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'ui-popovers'}}active{{/compare}}"
+                    href="{{path}}dashboard/ui-popovers.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> P</i>
+                    <span class="item-name">Popovers</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'ui-progressbars'}}active{{/compare}}"
+                    href="{{path}}dashboard/ui-progressbars.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> P</i>
+                    <span class="item-name">Progressbars</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'ui-tabs'}}active{{/compare}}"
+                    href="{{path}}dashboard/ui-tabs.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> T</i>
+                    <span class="item-name">Tabs</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'ui-tooltips'}}active{{/compare}}"
+                    href="{{path}}dashboard/ui-tooltips.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> T</i>
+                    <span class="item-name">Tooltips</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'ui-offcanvas'}}active{{/compare}}"
+                    href="{{path}}dashboard/ui-offcanvas.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon">O</i>
+                    <span class="item-name">Offcanvas</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#sidebar-wizard" role="button" aria-expanded="false"
+            aria-controls="sidebar-wizard">
+            <i class="icon material-symbols-outlined">
+                text_snippet
+            </i>
+            <span class="item-name">Forms Wizard</span>
+            <i class="right-icon material-symbols-outlined">chevron_right</i>
+        </a>
+        <ul class="sub-nav collapse" id="sidebar-wizard" data-bs-parent="#sidebar-menu">
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'form-wizard'}}active{{/compare}}"
+                    href="{{path}}dashboard/form-wizard.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> SW </i>
+                    <span class="item-name">Simple Wizard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'form-wizard-validate'}}active{{/compare}}"
+                    href="{{path}}dashboard/form-wizard-validate.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> VW </i>
+                    <span class="item-name">Validate Wizard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'form-wizard-vertical'}}active{{/compare}}"
+                    href="{{path}}dashboard/form-wizard-vertical.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> VW </i>
+                    <span class="item-name">Vertical Wizard</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#sidebar-table" role="button" aria-expanded="false"
+            aria-controls="sidebar-table">
+            <i class="icon material-symbols-outlined">
+                table_chart
+            </i>
+            <span class="item-name">Table</span>
+            <i class="right-icon material-symbols-outlined">chevron_right</i>
+        </a>
+        <ul class="sub-nav collapse" id="sidebar-table" data-bs-parent="#sidebar-menu">
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'tables-basic'}}active{{/compare}}"
+                    href="{{path}}dashboard/tables-basic.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> BT </i>
+                    <span class="item-name">Basic Tables</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'data-table'}}active{{/compare}}"
+                    href="{{path}}dashboard/data-table.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> D </i>
+                    <span class="item-name">Bootstrap Table</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'table-editable'}}active{{/compare}}"
+                    href="{{path}}dashboard/table-editable.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> E </i>
+                    <span class="item-name">Editable Table</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#sidebar-form" role="button" aria-expanded="false"
+            aria-controls="sidebar-form">
+            <i class="icon material-symbols-outlined">
+                view_timeline
+            </i>
+            <span class="item-name">Form</span>
+            <i class="right-icon material-symbols-outlined">chevron_right</i>
+        </a>
+        <ul class="sub-nav collapse" id="sidebar-form" data-bs-parent="#sidebar-menu">
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'form-layout'}}active{{/compare}}"
+                    href="{{path}}dashboard/form-layout.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> FE </i>
+                    <span class="item-name">Form Elements</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'form-validation'}}active{{/compare}}"
+                    href="{{path}}dashboard/form-validation.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> FV</i>
+                    <span class="item-name">Form Validation</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'form-switch'}}active{{/compare}}"
+                    href="{{path}}dashboard/form-switch.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> FS </i>
+                    <span class="item-name">Form Switch</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'form-chechbox'}}active{{/compare}}"
+                    href="{{path}}dashboard/form-chechbox.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> FC</i>
+                    <span class="item-name">Form Checkbox</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'form-radio'}}active{{/compare}}"
+                    href="{{path}}dashboard/form-radio.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> FR</i>
+                    <span class="item-name">Form Radio</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-item mb-4">
+        <a class="nav-link" data-bs-toggle="collapse" href="#sidebar-icons" role="button" aria-expanded="false"
+            aria-controls="sidebar-icons">
+            <i class="icon material-symbols-outlined">
+                error_outline
+            </i>
+            <span class="item-name">Icons</span>
+            <i class="right-icon material-symbols-outlined">chevron_right</i>
+        </a>
+        <ul class="sub-nav collapse" id="sidebar-icons" data-bs-parent="#sidebar-menu">
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'icon-fontawesome-5'}}active{{/compare}}"
+                    href="{{ path }}dashboard/icon-fontawesome-5.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> F </i>
+                    <span class="item-name">Font Awesome 5</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'icon-lineawesome'}}active{{/compare}}"
+                    href="{{ path }}dashboard/icon-lineawesome.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> L </i>
+                    <span class="item-name">Line Awesome</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'icon-remixicon'}}active{{/compare}}"
+                    href="{{ path }}dashboard/icon-remixicon.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> R </i>
+                    <span class="item-name">Remixicon</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{#compare active '==' 'material'}}active{{/compare}}"
+                    href="{{ path }}dashboard/icon-material.html">
+                    <i class="icon material-symbols-outlined filled">
+                        fiber_manual_record
+                    </i>
+                    <i class="sidenav-mini-icon"> M </i>
+                    <span class="item-name">Material</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>
+<!-- Sidebar Menu End -->

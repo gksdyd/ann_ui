@@ -1,0 +1,65 @@
+{
+    "appName": "SocialV",
+    "output" : "dist",
+    "mini": "true",
+    "logoName": "",
+    "faviconName": "",
+    "loaderName": "",
+    "options": {
+        "saveLocal": "sessionStorage",
+        "storeKey": "socialV",
+        "setting": {
+            "theme_scheme_direction": {
+                "value": "ltr"
+            },
+            "theme_scheme": {
+                "value": "light"
+            },
+            "theme_color": {
+                "colors": {
+                    "--{{prefix}}primary": "#50b5ff",
+                    "--{{prefix}}info": "#d592ff"
+                },
+                "value": "theme-color-default"
+            },
+            "sidebar_type": {
+                "value": []
+            },
+            "sidebar_menu_style": {
+                "value": "navs-rounded-all"
+            },
+            "footer": {
+                "value": "default"
+            }
+        }
+    },
+    "assets": {
+        "fonts": [
+            "./src/assets/fonts/**/*.*"
+        ],
+        "style": [
+            "./node_modules/swiper/swiper-bundle.min.css",
+            "./node_modules/flatpickr/dist/flatpickr.min.css",
+            "./node_modules/datatables/media/css/jquery.dataTables.min.css",
+            "./node_modules/select2/dist/css/select2.min.css",
+            "./node_modules/vanillajs-datepicker/dist/css/datepicker.min.css",
+            "./src/assets/vendor/Leaflet/leaflet.css",
+            "./src/assets/custom/socialv-custom.scss"
+        ],
+        "js": [
+            "./node_modules/jquery/dist/jquery.js",
+            "./node_modules/@popperjs/core/dist/umd/popper.min.js",
+            "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+            "./node_modules/waypoints/lib/jquery.waypoints.js",
+            "./node_modules/flatpickr/dist/flatpickr.min.js",
+            "./node_modules/select2/dist/js/select2.min.js",
+            "./node_modules/smooth-scrollbar/dist/smooth-scrollbar.js",
+            "./node_modules/datatables/media/js/jquery.dataTables.min.js",
+            "./node_modules/swiper/swiper-bundle.min.js",          
+            "./node_modules/vanillajs-datepicker/dist/js/datepicker-full.js",
+            "./node_modules/sweetalert2/dist/sweetalert2.min.js",
+            "./node_modules/apexcharts/dist/apexcharts.min.js",
+            "./src/assets/vendor/Leaflet/leaflet.js"
+        ]
+    }
+}
