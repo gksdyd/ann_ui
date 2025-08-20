@@ -37,16 +37,16 @@
       word-break: break-word;
     }
 
-    .card-table-tr{
+    .card-table-tr {
       height: 6vh;
       vertical-align: middle;
     }
 
-    .card-table-th{
+    .card-table-th {
       white-space: normal;
     }
 
-    .card-table-td{
+    .card-table-td {
       white-space: normal;
     }
   </style>
@@ -1850,55 +1850,53 @@
                         Total:6
                       </div>
                     </div>
-                    <div id="table" class="table-editable">
-                      <span class="table-add float-end mb-3 me-2"></span>
-                      <table class="table table-bordered table-responsive-md table-striped text-center card-table">
-                        <!-- <thead> -->
-                        <!-- <tr>
-                           <th>#</th>
-                           <th>Notice Title</th>
-                           <th>Last Updated</th>
-                        </tr> -->
-                        <!-- </thead> -->
-                        <tbody>
+                    <div class="table-responsive">
+                      <table class="files-lists table table-striped mt-4">
+                        <thead>
                           <tr>
-                            <th>#</th>
-                            <th class="card-table-th">Notice Title</th>
-                            <th>Last Updated</th>
+                            <th scope="col" style="width: 30px;">
+                              <div class=" text-center">
+                                <input type="checkbox" class="form-check-input">
+                              </div>
+                            </th>
+                            <th scope="col" class="index-td" style="width: 100px;">#</th>
+                            <th scope="col" class="title-date-td" style="width: 100px;">Title</th>
+                            <th scope="col" style="width: 100px; text-align: center;">Date</th>
                           </tr>
-                          <tr class="card-table-tr">
-                            <td>1</td>
-                            <td class="card-table-td">d</td>
-                            <td>2025-08-06</td>
-                          </tr>
-                          <tr class="card-table-tr">
-                            <td>2</td>
-                            <td class="card-table-td">Anna Mullfssdfddddddddddddddddddddddd</td>
-                            <td>2025-08-06</td>
-                          </tr>
-                          <tr class="card-table-tr">
-                            <td>3</td>
-                            <td class="card-table-td">Anna Mull</td>
-                            <td>2025-08-06</td>
+                        </thead>
+                        <tbody>
+                          <tr th:if="${!#lists.isEmpty(list)}" th:each="list,stat : ${list}">
+                            <td>
+                              <div class="text-center">
+                                <input type="checkbox" class="form-check-input">
+                              </div>
+                            </td>
+                            <td th:text="${list.lnrdSeq}">1</td>
+                            <td style="width: 100px; word-break: break-word">
+                              <a>안녕하세요안녕하세요</a>
+                            </td>
+                            <td style="text-align: center;">
+                              <p style="margin: 0;"><a
+                                  th:text="'( ' + ${#dates.format(list.regDateTime, 'yyyy-MM-dd  HH:mm:ss')} + ' )'"
+                                  href="javascript:void(0);"
+                                  th:attr="onclick=|goForm('${list.lnrdSeq}')|">2012-01-01</a></p>
+                            </td>
                           </tr>
                         </tbody>
                       </table>
+                      <ul class="pagination justify-content-center mb-0">
+                        <li th:if="${vo.startPage gt vo.pageNumToShow}" class="page-item" style="cursor: pointer;"><a
+                            class="page-link" href="javascript:goList(${vo.startPage - 1})"
+                            th:attr="onclick=|goList('${vo.startPage - 1}')|"><span aria-hidden="true">«</span></a></li>
+                        <li th:each="num: ${#numbers.sequence(vo.startPage, vo.endPage)}"
+                          th:classappend="${num eq vo.thisPage} ? active : ''" class="page-item"
+                          style="cursor: pointer;"><a class="page-link" th:attr="onclick=|goList('${num}')|"
+                            th:text="${num}"><!-- ${i.index} --></a></li>
+                        <li th:if="${vo.endPage ne vo.totalPages}" class="page-item" style="cursor: pointer;"><a
+                            class="page-link" th:attr="onclick=|goList('${vo.endPage + 1}')|"><span
+                              aria-hidden="true">»</span></a></li>
+                      </ul>
                     </div>
-                    <ul class="pagination mb-0 d-flex position-relative justify-content-end p-1">
-                      <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                          <span aria-hidden="true">&laquo;</span>
-                        </a>
-                      </li>
-                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                          <span aria-hidden="true">&raquo;</span>
-                        </a>
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </div>
